@@ -22,7 +22,7 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <nav className="flex h-20 items-center justify-between">
           <Link href="/" className="font-serif text-2xl font-medium tracking-wide text-foreground">
-            BE PILATES
+            NOVA PILATES
           </Link>
 
           {/* Desktop Navigation */}

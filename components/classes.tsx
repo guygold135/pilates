@@ -4,7 +4,7 @@ const classes = [
   {
     title: "פילאטיס מכשירים קלאסי",
     description:
-      "הבסיס למצוינות בפילאטיס. בניית כוח ליבה, שיפור יציבה ופיתוח שרירים ארוכים וחטובים באמצעות תנועות מבוקרות ומדויקות.",
+      "שיעור יסוד שמחזק את שרירי הליבה, משפר יציבה ומפתח שליטה בתנועה — מתאים לכל רמת ניסיון.",
     level: "כל הרמות",
     duration: "55 דקות",
     image: "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=2070&auto=format&fit=crop",
@@ -12,7 +12,7 @@ const classes = [
   {
     title: "קור ופלואו דינמי",
     description:
-      "שילוב מרענן של פילאטיס מסורתי עם רצפי תנועה דינמיים. אתגור הליבה תוך בניית סיבולת לב-ריאה.",
+      "אימון אנרגטי שמשלב תנועות קלאסיות עם רצפים דינמיים — מעלה דופק, מחזק ליבה ומשאיר אותך מלאת אנרגיה.",
     level: "בינוני",
     duration: "50 דקות",
     image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=2070&auto=format&fit=crop",
@@ -20,7 +20,7 @@ const classes = [
   {
     title: "יציבה, גמישות ומתיחות",
     description:
-      "תנועות עדינות ותראפויטיות המיועדות לטיפול בחוסר איזון ביציבה ולתמיכה בהתאוששות. מושלם למי שמחפשת שיקום מודע.",
+      "שיעור עדין שמתמקד ביישור הגוף, הגברת טווח תנועה ושחרור מתח — אידיאלי להתחלה או לימים שצריך קצב רגוע יותר.",
     level: "מתחילות",
     duration: "55 דקות",
     image: "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=2069&auto=format&fit=crop",
@@ -36,7 +36,7 @@ export function Classes() {
           <div>
             <p className="mb-4 text-sm tracking-widest text-primary">סגנונות שיעורים</p>
             <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground md:text-4xl">
-              חוויות תנועה מותאמות אישית
+              שיעורים לכל שלב במסע שלך
             </h2>
           </div>
           <a

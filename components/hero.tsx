@@ -32,11 +32,11 @@ export function Hero() {
             סטודיו בוטיק לפילאטיס מכשירים
           </p>
           <h1 className="font-serif text-4xl font-medium leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
-            <span className="block text-balance">למצוא את האיזון.</span>
-            <span className="block text-balance">לגלות את החוזק שלך.</span>
+            <span className="block text-balance">להתחבר לגוף.</span>
+            <span className="block text-balance">לבנות כוח מבפנים.</span>
           </h1>
           <p className="mt-8 max-w-lg text-lg leading-relaxed text-muted-foreground">
-            חוויית פילאטיס מכשירים אקסקלוסיבית בסטודיו בוטיק שמתוכנן בדיוק בשבילך.
+            אימוני פילאטיס מכשירים בקבוצות קטנות, עם תשומת לב אישית ואווירה רגועה שמאפשרת לך להתקדם בקצב שלך.
           </p>
           <div className="mt-12 flex flex-col gap-4 sm:flex-row sm:items-center">
             <a

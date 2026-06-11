@@ -4,13 +4,13 @@ import Link from "next/link"
 import { useState } from "react"
 import { Mail, MapPin, Clock, Phone } from "lucide-react"
 
-const STUDIO_ADDRESS = "Mishmar HaYarden St 20, Netanya"
-const STUDIO_PHONE = "0503444286"
-const STUDIO_PHONE_TEL = `tel:${STUDIO_PHONE}`
+const STUDIO_ADDRESS = "HaOrenim St 14, Ramat Gan"
+const STUDIO_PHONE = "050-555-1234"
+const STUDIO_PHONE_TEL = `tel:${STUDIO_PHONE.replace(/-/g, "")}`
 const STUDIO_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(STUDIO_ADDRESS)}`
-const INSTAGRAM_URL =
-  "https://www.instagram.com/studio.bepilates?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
-const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61585528762091"
+const INSTAGRAM_URL = "#"
+const FACEBOOK_URL = "#"
+const STUDIO_EMAIL = "hello@novapilates.co.il"
 const FORMSPREE_ENDPOINT = process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID
   ? `https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID}`
   : null
@@ -39,7 +39,7 @@ export function Footer() {
       body.append("name", name)
       body.append("email", email)
       body.append("phone", phone)
-      body.append("_subject", "בקשה חדשה לשיעור היכרות - BE PILATES")
+      body.append("_subject", "בקשה חדשה לשיעור היכרות - NOVA PILATES")
 
       const response = await fetch(FORMSPREE_ENDPOINT, {
         method: "POST",
@@ -81,7 +81,7 @@ export function Footer() {
                 מתחילה את המסע שלך איתנו?
               </h2>
               <p className="mt-4 leading-relaxed text-background/70">
-                מוכנה להתחיל? השאירי פרטים ונחזור אלייך לתאום שיעור היכרות וסיור בסטודיו.
+                רוצה לנסות? השאירי פרטים ונחזור אלייך לתיאום שיעור היכרות חינם וסיור קצר בסטודיו.
               </p>
 
               {submitted ? (
@@ -171,9 +171,9 @@ export function Footer() {
                       strokeWidth={1.5}
                     />
                     <p>
-                      רחוב משמר הירדן 20
+                      רחוב האורנים 14
                       <br />
-                      נתניה, ישראל
+                      רמת גן, ישראל
                     </p>
                   </a>
                 </div>
@@ -183,8 +183,8 @@ export function Footer() {
                   <div className="flex items-start gap-3 text-background/70">
                     <Clock className="mt-1 h-5 w-5 flex-shrink-0 text-primary" strokeWidth={1.5} />
                     <div className="space-y-1 text-sm">
-                      <p>ראשון – חמישי: 06:00 – 21:00</p>
-                      <p>שישי: 07:00 – 14:00</p>
+                      <p>ראשון – חמישי: 07:00 – 20:00</p>
+                      <p>שישי: 08:00 – 13:00</p>
                       <p>שבת: סגור</p>
                     </div>
                   </div>
@@ -203,8 +203,8 @@ export function Footer() {
                     </a>
                     <div className="flex items-center gap-3 text-background/70">
                       <Mail className="h-5 w-5 flex-shrink-0 text-primary" strokeWidth={1.5} />
-                      <a href="mailto:hello@bepilates.co.il" className="hover:text-primary">
-                        hello@bepilates.co.il
+                      <a href={`mailto:${STUDIO_EMAIL}`} className="hover:text-primary">
+                        {STUDIO_EMAIL}
                       </a>
                     </div>
                   </div>
@@ -249,7 +249,7 @@ export function Footer() {
             <Link href="#" className="transition-colors hover:text-background">
               תנאי שימוש
             </Link>
-            <span>© 2024 BE PILATES Studio. כל הזכויות שמורות.</span>
+            <span>© 2026 Nova Pilates Studio. כל הזכויות שמורות.</span>
         </div>
       </div>
     </footer>
